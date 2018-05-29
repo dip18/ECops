@@ -1,0 +1,109 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body bgcolor="#e0f4ff">
+    <form id="form1" runat="server">
+    <div>
+    
+        &nbsp;
+        <table style="z-index: 100; left: -9px; position: absolute; top: 6px">
+            <tr style="border-bottom-color:Black ;border-bottom-style:outset ">
+              <marquee><h1 style="font-style:oblique;color:Olive  ">Online Crime Report</h1> </marquee></tr>
+            <tr style="height: 10px">
+                <td style="width: 133px; border-right-style: outset; height: 9px; border-right-color: gray">
+                    <asp:Panel ID="panel1" runat="server" BackColor="Beige" BorderStyle="Outset">
+                        <asp:Menu ID="m1" runat="server" BorderStyle="Outset" ItemWrap="True" Width="123px" Height="36px">
+                            <Items>
+                                <asp:MenuItem Text="Aministrator" Value="Aministrator">
+                                    <asp:MenuItem  Text="Administrator Login"
+                                        Value="Login" NavigateUrl="~/typeofuserlogin.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Caution Forward" Value="Caution Forward" NavigateUrl="~/Administrator/ForwardCaution.aspx"></asp:MenuItem>
+                                                                    </asp:MenuItem>
+                            </Items>
+                            <StaticSelectedStyle BackColor="#404040" BorderColor="Maroon" BorderStyle="Outset" />
+                        </asp:Menu>
+                       <asp:Menu ID="m2" runat="server" BorderStyle="Outset" Width="128px" Height="34px">
+                            <Items>
+                                <asp:MenuItem Text="User" Value="user">
+                                     <asp:MenuItem Text="User Login" Value="Login" NavigateUrl="~/typeofuserlogin.aspx" ></asp:MenuItem>
+                                     <asp:MenuItem Text="Sending Complaint" Value="Sendingcomplaint" NavigateUrl="~/User/complaintregistor.aspx"></asp:MenuItem>
+                                      <asp:MenuItem Text="ReceiveSuggastions" Value="Sendingcomplaint" NavigateUrl="~/User/receiversuggations.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                        
+                        <asp:Menu ID="m4" runat="server" BorderStyle="Outset" Width="128px" Height="34px">
+                            <Items>
+                                <asp:MenuItem Text="Department" Value="complaint">
+                                    <asp:MenuItem Text="User Login" Value="Login" NavigateUrl="~/typeofuserlogin.aspx" ></asp:MenuItem>
+                                    <asp:MenuItem Text="Thieves Information" Value="sending" NavigateUrl="~/Department/maitainsthievesinformation.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Complaint Receiving" Value="this" NavigateUrl="~/Department/receivecomplaint.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="ForwardCaution" Value="Caution" NavigateUrl="~/Department/forwarsuggations.aspx"></asp:MenuItem>
+                                      <asp:MenuItem Text="ReceiveCaution" Value="Caution" NavigateUrl="~/Department/receivesuggation.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </asp:Panel>
+                </td>
+                <td style="height: 9px">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <br />
+                        <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                      
+                      
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+          <tr>
+          <td>
+              &nbsp;</td>
+          <td>
+          <asp:HyperLink id="h1" runat="server" ForeColor="Maroon" NavigateUrl="~/contact.aspx" Text="contact"></asp:HyperLink>
+          </td>
+          </tr>
+          
+        </table>
+    </div>
+    </form>
+</body>
+</html>
